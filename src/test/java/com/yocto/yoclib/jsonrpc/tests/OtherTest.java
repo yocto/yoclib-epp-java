@@ -1,16 +1,16 @@
 package com.yocto.yoclib.jsonrpc.tests;
 
-import com.yocto.yoclib.epp.Administrator;
+import com.yocto.yoclib.epp.Other;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 
-public class AdministratorTest{
+public class OtherTest {
 
     @Test
     public void testConstructor(){
-        assertInstanceOf(Administrator.class,new Administrator());
+        assertInstanceOf(Other.class,new Other());
     }
 
 }

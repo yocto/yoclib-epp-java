@@ -1,16 +1,16 @@
 package com.yocto.yoclib.jsonrpc.tests;
 
-import com.yocto.yoclib.epp.Administrator;
+import com.yocto.yoclib.epp.Logout;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 
-public class AdministratorTest{
+public class LogoutTest {
 
     @Test
     public void testConstructor(){
-        assertInstanceOf(Administrator.class,new Administrator());
+        assertInstanceOf(Logout.class,new Logout());
     }
 
 }
