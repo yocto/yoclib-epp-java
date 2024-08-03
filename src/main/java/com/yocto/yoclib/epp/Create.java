@@ -4,6 +4,21 @@ import com.yocto.yoclib.epp.types.CommandTypeChoice;
 
 public class Create implements CommandTypeChoice {
 
-    //TODO COMMAND
+    private Object any;
+
+    public Object getAny() {
+        return this.any;
+    }
+
+    public void setAny(Object any) {
+        this.any = any;
+    }
+
+    @Override
+    public String toString() {
+        return "Create{" +
+                "any=" + any +
+                '}';
+    }
 
 }

@@ -7,7 +7,15 @@ public class Transfer implements CommandTypeChoice {
 
     private TransferOperationEnum op;
 
-    //TODO TYPE: ##other
+    private Object any;
+
+    public Object getAny() {
+        return this.any;
+    }
+
+    public void setAny(Object any) {
+        this.any = any;
+    }
 
     public TransferOperationEnum getOperation() {
         return this.op;
@@ -21,6 +29,7 @@ public class Transfer implements CommandTypeChoice {
     public String toString() {
         return "Transfer{" +
                 "op=" + op +
+                ", any=" + any +
                 '}';
     }
 
