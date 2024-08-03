@@ -4,6 +4,7 @@ import com.yocto.yoclib.epp.Null;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 
 public class NullTest {
@@ -11,6 +12,11 @@ public class NullTest {
     @Test
     public void testConstructor(){
         assertInstanceOf(Null.class,new Null());
+    }
+
+    @Test
+    public void testToString(){
+        assertEquals("Null{}",new Null().toString());
     }
 
 }

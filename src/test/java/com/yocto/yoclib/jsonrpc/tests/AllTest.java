@@ -4,6 +4,7 @@ import com.yocto.yoclib.epp.All;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 
 public class AllTest {
@@ -11,6 +12,11 @@ public class AllTest {
     @Test
     public void testConstructor(){
         assertInstanceOf(All.class,new All());
+    }
+
+    @Test
+    public void testToString(){
+        assertEquals("All{}",new All().toString());
     }
 
 }

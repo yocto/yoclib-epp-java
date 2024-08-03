@@ -4,6 +4,7 @@ import com.yocto.yoclib.epp.Same;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 
 public class SameTest {
@@ -11,6 +12,11 @@ public class SameTest {
     @Test
     public void testConstructor(){
         assertInstanceOf(Same.class,new Same());
+    }
+
+    @Test
+    public void testToString(){
+        assertEquals("Same{}",new Same().toString());
     }
 
 }

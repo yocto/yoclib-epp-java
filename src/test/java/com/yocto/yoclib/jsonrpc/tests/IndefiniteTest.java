@@ -4,6 +4,7 @@ import com.yocto.yoclib.epp.Indefinite;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 
 public class IndefiniteTest {
@@ -11,6 +12,11 @@ public class IndefiniteTest {
     @Test
     public void testConstructor(){
         assertInstanceOf(Indefinite.class,new Indefinite());
+    }
+
+    @Test
+    public void testToString(){
+        assertEquals("Indefinite{}",new Indefinite().toString());
     }
 
 }

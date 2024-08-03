@@ -4,6 +4,7 @@ import com.yocto.yoclib.epp.Stated;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 
 public class StatedTest {
@@ -11,6 +12,11 @@ public class StatedTest {
     @Test
     public void testConstructor(){
         assertInstanceOf(Stated.class,new Stated());
+    }
+
+    @Test
+    public void testToString(){
+        assertEquals("Stated{}",new Stated().toString());
     }
 
 }
