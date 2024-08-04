@@ -30,24 +30,29 @@ public class Login implements CommandTypeChoice{
         return this.svcs;
     }
 
-    public void setClientID(ClientID clID) {
+    public Login setClientID(ClientID clID) {
         this.clID = clID;
+        return this;
     }
 
-    public void setPassword(Password pw) {
+    public Login setPassword(Password pw) {
         this.pw = pw;
+        return this;
     }
 
-    public void setNewPassword(Password newPW) {
+    public Login setNewPassword(Password newPW) {
         this.newPW = newPW;
+        return this;
     }
 
-    public void setOptions(Options options) {
+    public Login setOptions(Options options) {
         this.options = options;
+        return this;
     }
 
-    public void setServices(Services svcs) {
+    public Login setServices(Services svcs) {
         this.svcs = svcs;
+        return this;
     }
 
     @Override

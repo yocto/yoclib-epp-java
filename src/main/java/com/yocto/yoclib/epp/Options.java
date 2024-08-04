@@ -13,12 +13,14 @@ public class Options{
         return this.lang;
     }
 
-    public void setVersion(Version version) {
+    public Options setVersion(Version version) {
         this.version = version;
+        return this;
     }
 
-    public void setLanguage(Language lang) {
+    public Options setLanguage(Language lang) {
         this.lang = lang;
+        return this;
     }
 
     @Override

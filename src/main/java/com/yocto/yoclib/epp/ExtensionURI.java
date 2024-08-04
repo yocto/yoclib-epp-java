@@ -12,8 +12,9 @@ public class ExtensionURI {
         return this.value;
     }
 
-    public void setValue(String value) {
+    public ExtensionURI setValue(String value) {
         this.value = value;
+        return this;
     }
 
     @Override

@@ -8,8 +8,9 @@ public class Ours{
         return this.recDesc;
     }
 
-    public void setRecipientDescription(RecipientDescription recDesc) {
+    public Ours setRecipientDescription(RecipientDescription recDesc) {
         this.recDesc = recDesc;
+        return this;
     }
 
     @Override

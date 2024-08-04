@@ -12,8 +12,9 @@ public class ClientTransactionID {
         return this.value;
     }
 
-    public void setValue(String value) {
+    public ClientTransactionID setValue(String value) {
         this.value = value;
+        return this;
     }
 
     @Override

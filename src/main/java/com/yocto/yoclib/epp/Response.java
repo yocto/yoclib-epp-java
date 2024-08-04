@@ -33,20 +33,24 @@ public class Response implements EPPTypeChoice {
         return this.trID;
     }
 
-    public void setMessageQueue(MessageQueue msgQ) {
+    public Response setMessageQueue(MessageQueue msgQ) {
         this.msgQ = msgQ;
+        return this;
     }
 
-    public void setResponseData(ResponseData resData) {
+    public Response setResponseData(ResponseData resData) {
         this.resData = resData;
+        return this;
     }
 
-    public void setExtension(Extension extension) {
+    public Response setExtension(Extension extension) {
         this.extension = extension;
+        return this;
     }
 
-    public void setTransactionID(TransactionID trID) {
+    public Response setTransactionID(TransactionID trID) {
         this.trID = trID;
+        return this;
     }
 
     @Override

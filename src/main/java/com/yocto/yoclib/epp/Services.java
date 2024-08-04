@@ -16,8 +16,9 @@ public class Services{
         return this.svcExtension;
     }
 
-    public void setServiceExtension(ServiceExtension svcExtension) {
+    public Services setServiceExtension(ServiceExtension svcExtension) {
         this.svcExtension = svcExtension;
+        return this;
     }
 
     @Override

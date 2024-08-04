@@ -13,12 +13,14 @@ public class Message {
         return this.lang;
     }
 
-    public void setValue(String value) {
+    public Message setValue(String value) {
         this.value = value;
+        return this;
     }
 
-    public void setLang(String lang) {
+    public Message setLang(String lang) {
         this.lang = lang;
+        return this;
     }
 
     @Override

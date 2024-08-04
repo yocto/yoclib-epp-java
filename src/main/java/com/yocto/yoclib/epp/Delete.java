@@ -10,8 +10,9 @@ public class Delete implements CommandTypeChoice {
         return this.any;
     }
 
-    public void setAny(Object any) {
+    public Delete setAny(Object any) {
         this.any = any;
+        return this;
     }
 
     @Override

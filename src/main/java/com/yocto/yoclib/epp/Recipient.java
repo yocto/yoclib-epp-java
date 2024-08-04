@@ -31,20 +31,24 @@ public class Recipient {
         return this.unrelated;
     }
 
-    public void setOther(Other other) {
+    public Recipient setOther(Other other) {
         this.other = other;
+        return this;
     }
 
-    public void setPublic(Public _public) {
+    public Recipient setPublic(Public _public) {
         this._public = _public;
+        return this;
     }
 
-    public void setSame(Same same) {
+    public Recipient setSame(Same same) {
         this.same = same;
+        return this;
     }
 
-    public void setUnrelated(Unrelated unrelated) {
+    public Recipient setUnrelated(Unrelated unrelated) {
         this.unrelated = unrelated;
+        return this;
     }
 
     @Override

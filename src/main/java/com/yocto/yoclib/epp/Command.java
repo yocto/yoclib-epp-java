@@ -1,14 +1,15 @@
 package com.yocto.yoclib.epp;
 
+import com.yocto.yoclib.epp.types.CommandTypeChoice;
 import com.yocto.yoclib.epp.types.EPPTypeChoice;
 
 public class Command implements EPPTypeChoice{
 
-    private EPPTypeChoice choice;
+    private CommandTypeChoice choice;
     private Extension extension;
     private ClientTransactionID clTRID;
 
-    public EPPTypeChoice getChoice() {
+    public CommandTypeChoice getChoice() {
         return this.choice;
     }
 
@@ -20,16 +21,19 @@ public class Command implements EPPTypeChoice{
         return clTRID;
     }
 
-    public void setChoice(EPPTypeChoice choice) {
+    public Command setChoice(CommandTypeChoice choice) {
         this.choice = choice;
+        return this;
     }
 
-    public void setExtension(Extension extension) {
+    public Command setExtension(Extension extension) {
         this.extension = extension;
+        return this;
     }
 
-    public void setClientTransactionID(ClientTransactionID clTRID) {
+    public Command setClientTransactionID(ClientTransactionID clTRID) {
         this.clTRID = clTRID;
+        return this;
     }
 
     @Override

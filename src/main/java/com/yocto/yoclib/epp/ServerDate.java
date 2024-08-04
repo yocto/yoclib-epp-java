@@ -14,8 +14,9 @@ public class ServerDate {
         return this.value;
     }
 
-    public void setValue(Date value) {
+    public ServerDate setValue(Date value) {
         this.value = value;
+        return this;
     }
 
     @Override

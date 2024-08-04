@@ -18,16 +18,19 @@ public class Statement{
         return this.retention;
     }
 
-    public void setPurpose(Purpose purpose) {
+    public Statement setPurpose(Purpose purpose) {
         this.purpose = purpose;
+        return this;
     }
 
-    public void setRecipient(Recipient recipient) {
+    public Statement setRecipient(Recipient recipient) {
         this.recipient = recipient;
+        return this;
     }
 
-    public void setRetention(Retention retention) {
+    public Statement setRetention(Retention retention) {
         this.retention = retention;
+        return this;
     }
 
     @Override

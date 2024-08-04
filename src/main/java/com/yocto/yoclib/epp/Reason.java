@@ -14,12 +14,14 @@ public class Reason {
         return this.value;
     }
 
-    public void setLanguage(String lang) {
+    public Reason setLanguage(String lang) {
         this.lang = lang;
+        return this;
     }
 
-    public void setValue(String value) {
+    public Reason setValue(String value) {
         this.value = value;
+        return this;
     }
 
     @Override

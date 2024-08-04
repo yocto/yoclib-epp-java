@@ -25,20 +25,24 @@ public class Greeting implements EPPTypeChoice {
         return this.dcp;
     }
 
-    public void setServerID(ServerID svID) {
+    public Greeting setServerID(ServerID svID) {
         this.svID = svID;
+        return this;
     }
 
-    public void setServerDate(ServerDate svDate) {
+    public Greeting setServerDate(ServerDate svDate) {
         this.svDate = svDate;
+        return this;
     }
 
-    public void setServiceMenu(ServiceMenu svcMenu) {
+    public Greeting setServiceMenu(ServiceMenu svcMenu) {
         this.svcMenu = svcMenu;
+        return this;
     }
 
-    public void setDCP(DCP dcp) {
+    public Greeting setDCP(DCP dcp) {
         this.dcp = dcp;
+        return this;
     }
 
     @Override

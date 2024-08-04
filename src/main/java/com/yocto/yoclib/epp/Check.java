@@ -10,8 +10,9 @@ public class Check implements CommandTypeChoice {
         return this.any;
     }
 
-    public void setAny(Object any) {
+    public Check setAny(Object any) {
         this.any = any;
+        return this;
     }
 
     @Override

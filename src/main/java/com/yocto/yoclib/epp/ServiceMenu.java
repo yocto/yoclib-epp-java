@@ -26,8 +26,9 @@ public class ServiceMenu {
         return this.svcExtension;
     }
 
-    public void setServiceExtension(ServiceExtension svcExtension) {
+    public ServiceMenu setServiceExtension(ServiceExtension svcExtension) {
         this.svcExtension = svcExtension;
+        return this;
     }
 
     @Override

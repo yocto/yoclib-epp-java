@@ -10,8 +10,9 @@ public class Retention{
         return this.choice;
     }
 
-    public void setChoice(DCPRetentionTypeChoice choice){
+    public Retention setChoice(DCPRetentionTypeChoice choice){
         this.choice = choice;
+        return this;
     }
 
     @Override

@@ -21,12 +21,14 @@ public class DCP{
         return this.expiry;
     }
 
-    public void setAccess(Access access) {
+    public DCP setAccess(Access access) {
         this.access = access;
+        return this;
     }
 
-    public void setExpiry(Expiry expiry) {
+    public DCP setExpiry(Expiry expiry) {
         this.expiry = expiry;
+        return this;
     }
 
     @Override

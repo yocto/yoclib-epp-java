@@ -13,16 +13,18 @@ public class Transfer implements CommandTypeChoice {
         return this.any;
     }
 
-    public void setAny(Object any) {
+    public Transfer setAny(Object any) {
         this.any = any;
+        return this;
     }
 
     public TransferOperationEnum getOperation() {
         return this.op;
     }
 
-    public void setOperation(TransferOperationEnum op) {
+    public Transfer setOperation(TransferOperationEnum op) {
         this.op = op;
+        return this;
     }
 
     @Override

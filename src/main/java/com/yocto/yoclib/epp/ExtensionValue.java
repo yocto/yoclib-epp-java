@@ -13,12 +13,14 @@ public class ExtensionValue {
         return this.reason;
     }
 
-    public void setValue(Value value) {
+    public ExtensionValue setValue(Value value) {
         this.value = value;
+        return this;
     }
 
-    public void setReason(Reason reason) {
+    public ExtensionValue setReason(Reason reason) {
         this.reason = reason;
+        return this;
     }
 
     @Override

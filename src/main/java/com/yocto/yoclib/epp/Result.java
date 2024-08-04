@@ -24,12 +24,14 @@ public class Result{
         return this.code;
     }
 
-    public void setMessage(Message msg) {
+    public Result setMessage(Message msg) {
         this.msg = msg;
+        return this;
     }
 
-    public void setCode(ResultCodeEnum code) {
+    public Result setCode(ResultCodeEnum code) {
         this.code = code;
+        return this;
     }
 
     @Override

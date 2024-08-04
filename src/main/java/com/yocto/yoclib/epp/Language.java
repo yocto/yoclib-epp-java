@@ -12,8 +12,9 @@ public class Language {
         return this.value;
     }
 
-    public void setValue(String value) {
+    public Language setValue(String value) {
         this.value = value;
+        return this;
     }
 
     @Override

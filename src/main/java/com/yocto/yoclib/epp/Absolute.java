@@ -14,8 +14,9 @@ public class Absolute{
         return this.value;
     }
 
-    public void setValue(Date value) {
+    public Absolute setValue(Date value) {
         this.value = value;
+        return this;
     }
 
     @Override

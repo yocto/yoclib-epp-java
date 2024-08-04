@@ -16,12 +16,14 @@ public class Poll implements CommandTypeChoice {
         return this.msgID;
     }
 
-    public void setOperation(PollOperationEnum op) {
+    public Poll setOperation(PollOperationEnum op) {
         this.op = op;
+        return this;
     }
 
-    public void setMessageID(String msgID) {
+    public Poll setMessageID(String msgID) {
         this.msgID = msgID;
+        return this;
     }
 
     @Override

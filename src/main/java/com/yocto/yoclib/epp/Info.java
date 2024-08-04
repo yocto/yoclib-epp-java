@@ -10,8 +10,9 @@ public class Info implements CommandTypeChoice {
         return this.any;
     }
 
-    public void setAny(Object any) {
+    public Info setAny(Object any) {
         this.any = any;
+        return this;
     }
 
     @Override

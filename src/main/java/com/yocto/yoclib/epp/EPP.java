@@ -4,14 +4,15 @@ import com.yocto.yoclib.epp.types.EPPTypeChoice;
 
 public class EPP{
 
-    EPPTypeChoice choice;
+    private EPPTypeChoice choice;
 
     public EPPTypeChoice getChoice(){
         return this.choice;
     }
 
-    public void setChoice(EPPTypeChoice choice) {
+    public EPP setChoice(EPPTypeChoice choice) {
         this.choice = choice;
+        return this;
     }
 
     @Override

@@ -23,20 +23,24 @@ public class Purpose {
         return this.provisioning;
     }
 
-    public void setAdministator(Administrator admin) {
+    public Purpose setAdministator(Administrator admin) {
         this.admin = admin;
+        return this;
     }
 
-    public void setContact(Contact contact) {
+    public Purpose setContact(Contact contact) {
         this.contact = contact;
+        return this;
     }
 
-    public void setOther(Other other) {
+    public Purpose setOther(Other other) {
         this.other = other;
+        return this;
     }
 
-    public void setProvisioning(Provisioning provisioning) {
+    public Purpose setProvisioning(Provisioning provisioning) {
         this.provisioning = provisioning;
+        return this;
     }
 
     @Override

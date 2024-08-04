@@ -13,12 +13,14 @@ public class Expiry{
         return this.relative;
     }
 
-    public void setAbsolute(Absolute absolute) {
+    public Expiry setAbsolute(Absolute absolute) {
         this.absolute = absolute;
+        return this;
     }
 
-    public void setRelative(Relative relative) {
+    public Expiry setRelative(Relative relative) {
         this.relative = relative;
+        return this;
     }
 
     @Override

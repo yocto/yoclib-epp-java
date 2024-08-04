@@ -12,8 +12,9 @@ public class Relative {
         return this.value;
     }
 
-    public void setValue(String value) {
+    public Relative setValue(String value) {
         this.value = value;
+        return this;
     }
 
     @Override

@@ -12,8 +12,9 @@ public class ObjectURI {
         return this.value;
     }
 
-    public void setValue(String value) {
+    public ObjectURI setValue(String value) {
         this.value = value;
+        return this;
     }
 
     @Override

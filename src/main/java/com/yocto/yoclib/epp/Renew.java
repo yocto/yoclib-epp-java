@@ -10,8 +10,9 @@ public class Renew implements CommandTypeChoice {
         return this.any;
     }
 
-    public void setAny(Object any) {
+    public Renew setAny(Object any) {
         this.any = any;
+        return this;
     }
 
     @Override

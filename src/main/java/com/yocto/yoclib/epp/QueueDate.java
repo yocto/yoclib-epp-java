@@ -14,8 +14,9 @@ public class QueueDate {
         return this.value;
     }
 
-    public void setValue(Date value) {
+    public QueueDate setValue(Date value) {
         this.value = value;
+        return this;
     }
 
     @Override

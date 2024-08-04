@@ -10,8 +10,9 @@ public class Update implements CommandTypeChoice {
         return this.any;
     }
 
-    public void setAny(Object any) {
+    public Update setAny(Object any) {
         this.any = any;
+        return this;
     }
 
     @Override

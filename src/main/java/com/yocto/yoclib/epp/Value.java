@@ -13,12 +13,14 @@ public class Value {
         return this.anyAttribute;
     }
 
-    public void setAny(Object any) {
+    public Value setAny(Object any) {
         this.any = any;
+        return this;
     }
 
-    public void setAnyAttribute(String anyAttribute) {
+    public Value setAnyAttribute(String anyAttribute) {
         this.anyAttribute = anyAttribute;
+        return this;
     }
 
     @Override

@@ -13,12 +13,14 @@ public class TransactionID {
         return this.svTRID;
     }
 
-    public void setClientTransactionID(ClientTransactionID clTRID) {
+    public TransactionID setClientTransactionID(ClientTransactionID clTRID) {
         this.clTRID = clTRID;
+        return this;
     }
 
-    public void setServerTransactionID(ServerTransactionID svTRID) {
+    public TransactionID setServerTransactionID(ServerTransactionID svTRID) {
         this.svTRID = svTRID;
+        return this;
     }
 
     @Override

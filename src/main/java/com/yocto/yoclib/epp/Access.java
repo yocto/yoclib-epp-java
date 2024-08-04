@@ -10,8 +10,9 @@ public class Access {
         return this.choice;
     }
 
-    public void setChoice(DCPAccessTypeChoice choice) {
+    public Access setChoice(DCPAccessTypeChoice choice) {
         this.choice = choice;
+        return this;
     }
 
     @Override

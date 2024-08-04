@@ -23,20 +23,24 @@ public class MessageQueue{
         return this.id;
     }
 
-    public void setQueueDate(QueueDate qDate) {
+    public MessageQueue setQueueDate(QueueDate qDate) {
         this.qDate = qDate;
+        return this;
     }
 
-    public void setMessage(Message msg) {
+    public MessageQueue setMessage(Message msg) {
         this.msg = msg;
+        return this;
     }
 
-    public void setCount(long count) {
+    public MessageQueue setCount(long count) {
         this.count = count;
+        return this;
     }
 
-    public void setId(String id) {
+    public MessageQueue setId(String id) {
         this.id = id;
+        return this;
     }
 
     @Override
