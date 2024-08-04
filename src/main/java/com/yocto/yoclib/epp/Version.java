@@ -14,8 +14,9 @@ public class Version{
         return this.value;
     }
 
-    public void setValue(VersionEnum value) {
+    public Version setValue(VersionEnum value) {
         this.value = value;
+        return this;
     }
 
     @Override

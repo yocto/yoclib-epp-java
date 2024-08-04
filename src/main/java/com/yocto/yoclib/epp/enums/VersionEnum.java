@@ -13,4 +13,10 @@ public enum VersionEnum {
     public String getValue(){
         return this.value;
     }
+
+    @Override
+    public String toString() {
+        return "v"+value;
+    }
+
 }
