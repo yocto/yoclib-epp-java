@@ -6,6 +6,10 @@ public class Reason {
 
     private String value;
 
+    public Reason(String value){
+        this.value = value;
+    }
+
     public String getLanguage() {
         return this.lang;
     }

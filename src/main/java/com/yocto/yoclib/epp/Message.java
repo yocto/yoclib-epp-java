@@ -5,6 +5,10 @@ public class Message {
     private String value;
     private String lang;
 
+    public Message(String value){
+        this.value = value;
+    }
+
     public String getValue() {
         return this.value;
     }
@@ -18,7 +22,7 @@ public class Message {
         return this;
     }
 
-    public Message setLang(String lang) {
+    public Message setLanguage(String lang) {
         this.lang = lang;
         return this;
     }

@@ -1,25 +1,23 @@
 package com.yocto.yoclib.epp;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Value {
 
     private Object any;
-    private String anyAttribute;
+    private final Map<String,String> anyAttribute = new HashMap<>();
 
     public Object getAny() {
         return this.any;
     }
 
-    public String getAnyAttribute() {
+    public Map<String,String> getAnyAttribute() {
         return this.anyAttribute;
     }
 
     public Value setAny(Object any) {
         this.any = any;
-        return this;
-    }
-
-    public Value setAnyAttribute(String anyAttribute) {
-        this.anyAttribute = anyAttribute;
         return this;
     }
 
